@@ -415,7 +415,7 @@ class GoutteDriver implements DriverInterface
      */
     public function isChecked($xpath)
     {
-        return (bool) $this->getValue($xpath);
+        return null !== $this->getAttribute($xpath, 'checked');
     }
 
     /**
